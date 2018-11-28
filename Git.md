@@ -3,18 +3,18 @@
 Git每次提交代码, 都要写 Commit message(提交说明), 否则就不允许提交.
 一般来说 Commit message 应该清晰明了, 说明本次提交的目的.
 
-1.  [Commit message 作用](#Commit message 作用)
+内容:
 
-2.  [Commit message 格式](#Commit message 格式)
-    1.  [Header(必需)](#Header(必需))
-    2.  [Body(可选)](#Body(可选))
-    3.  [Footer(可选)](#Footer(可选))
-        1.  [不兼容变动](#1. 不兼容变动)
-        2.  [关闭 Issue](#2. 关闭 Issue)
-        
-3.  [生成 Change log](#生成 Change log)
+1.  [作用](#作用)
+2.  [格式](#格式)
+    1.  [Header](#Header)
+    2.  [Body](#Body)
+    3.  [Footer](#Footer)
+        1.  [不兼容变动](#不兼容变动)
+        2.  [关闭 Issue](#关闭Issue)
+3.  [生成Changelog](#生成Changelog)
 
-## Commit message 作用
+## 作用
 
 格式化 Commit message, 有以下几个好处:
 
@@ -22,7 +22,7 @@ Git每次提交代码, 都要写 Commit message(提交说明), 否则就不允�
 2.  过滤关键字, 迅速定位.
 3.  方便生成文档Change Log.
 
-## Commit message 格式
+## 格式
 
 每次提交, Commit message 都包括三个部分: `Header`、`Body`以及`Footer`.
 
@@ -66,7 +66,7 @@ Header部分只有一行, 包括三个字段:
     1.  第一个字母小写.
     1.  结尾不加句号`.`.
 
-### Body(可选)
+### Body
 
 Body 部分是对本次 commit 的详细描述, 可以分成多行. eg:
 
@@ -79,11 +79,11 @@ Body 部分是对本次 commit 的详细描述, 可以分成多行. eg:
 1.  使用第一人称现在时, 比如使用`change`而不是`changed`或者`changes`.
 2.  应该说明代码变动的动机, 以及与以前行为的对比.
 
-### Footer(可选)
+### Footer
 
 Footer 部分只用于两种情况.
 
-#### 1. 不兼容变动
+#### 不兼容变动
 
 如果当前代码与上一个版本不兼容, 则 Footer 部分以`BREAKING CHANGE`开头, 后面是对变动的描述、以及变动的理由和迁移方法.
 
@@ -107,7 +107,7 @@ BREAKING CHANGE: 隔离范围绑定定义已经改变.
     移除的`inject`不是一般有用的指令, 所以这里本应该没有用它的编码.
 ```
 
-#### 2. 关闭 Issue
+#### 关闭 Issue
 
 如果当前 commit 针对某个 issue, 那么可以在Footer部分关闭这个 issue.
 
@@ -121,7 +121,7 @@ Close #765
 Close #123, #223, #323
 ```
 
-## 生成 Change log
+## 生成Changelog
 
 如果我们的提交都按照规范的话, 那就很简单了. 生成的文档包括以下三个部分:
 
