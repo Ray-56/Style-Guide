@@ -3,16 +3,14 @@
 Git每次提交代码, 都要写 Commit message(提交说明), 否则就不允许提交.
 一般来说 Commit message 应该清晰明了, 说明本次提交的目的.
 
-[Commit message 作用](#Commit message 作用)
-
-[Commit message 格式](#Commit message 格式)
-    [Header(必需)](#Header(必需))
-    [Body(可选)](#Body(可选))
-    [Footer(可选)](#Footer(可选))
-        [1. 不兼容变动](#1. 不兼容变动)
-        [2. 关闭 Issue](#2. 关闭 Issue)
-
-[生成 Change log](#生成 Change log)
+1.  [Commit message 作用](#Commit message 作用)
+2.  [Commit message 格式](#Commit message 格式)
+    1.  [Header(必需)](#Header(必需))
+    2.  [Body(可选)](#Body(可选))
+    3.  [Footer(可选)](#Footer(可选))
+        1.  [不兼容变动](#1. 不兼容变动)
+        2.  [关闭 Issue](#2. 关闭 Issue)
+3.  [生成 Change log](#生成 Change log)
 
 ## Commit message 作用
 
