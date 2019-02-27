@@ -11,7 +11,7 @@ Git每次提交代码, 都要写 Commit message(提交说明), 否则就不允�
     2.  [Body](#Body)
     3.  [Footer](#Footer)
         1.  [不兼容变动](#不兼容变动)
-        2.  [关闭 Issue](#关闭Issue)
+        2.  [关闭Issue](#关闭Issue)
 3.  [生成Changelog](#生成Changelog)
 
 ## 作用
@@ -107,7 +107,7 @@ BREAKING CHANGE: 隔离范围绑定定义已经改变.
     移除的`inject`不是一般有用的指令, 所以这里本应该没有用它的编码.
 ```
 
-#### 关闭 Issue
+#### 关闭Issue
 
 如果当前 commit 针对某个 issue, 那么可以在Footer部分关闭这个 issue.
 
